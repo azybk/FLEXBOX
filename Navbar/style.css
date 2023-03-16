@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(164, 74, 248);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    height: 50px;
+    align-items: center;
+    color: rgb(73, 178, 247);
+}
+
+nav .logo {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: rgb(237, 230, 243);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+
+/* Hamburger Menu */
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 43px;
+    height: 25px;
+    left: -9px;
+    top: -2px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(237, 230, 243);
+    border-radius: 3px;
+}
+
+
+/* Responsive Breakpoint */
+
+
+/* ukuran table */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+
+/* ukuran mobile */
+
+@media screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+}
